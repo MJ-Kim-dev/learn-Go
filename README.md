@@ -5,6 +5,8 @@ Study golang with sample code
 * [01_hello-world](https://github.com/MJ-Kim-dev/learngo/tree/master/01_hello-world)
 * [02_Variables](https://github.com/MJ-Kim-dev/learngo/tree/master/02_Variables)
 * [03_functions](https://github.com/MJ-Kim-dev/learngo/tree/master/03_functions)
+* [04_control-statement](https://github.com/MJ-Kim-dev/learngo/tree/master/04_control-statement)
+* [05_data-structures](https://github.com/MJ-Kim-dev/learngo/tree/master/05_data-structures)
 
 # Funny
 Write in go (song) - https://youtu.be/LJvEIjRBSDA
