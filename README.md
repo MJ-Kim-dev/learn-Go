@@ -18,3 +18,5 @@ Just use command 'go run main.go'
 If you want to run it on the website, click this 
 [![Run on Repl.it](https://repl.it/badge/github/MJ-Kim-dev/learngo)](https://repl.it/github/MJ-Kim-dev/learngo)
 
+# Additional Resources
+* [golang book(korean)](http://pyrasis.com/private/2015/06/01/publish-go-for-the-really-impatient-book), source : [github](https://github.com/pyrasis/golangbook)
