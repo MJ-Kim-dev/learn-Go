@@ -8,10 +8,14 @@ import (
 
 var errRequestFail = errors.New("Request Faild")
 
+type result struct {
+	url   string
+	check bool
+}
+
 func main() {
 
-	var results = make(map[string]bool)
-
+	c := make(chan result)
 	urls := []string{
 		"https://google.com",
 		"https://naver.com",
@@ -22,26 +26,19 @@ func main() {
 
 	for _, url := range urls {
 		fmt.Println("Checking: ", url)
-		err := hitURL(url)
-		result := true
-
-		if err != nil {
-			fmt.Println(err)
-			result = false
-		}
-		results[url] = result
-
+		go hitURL(url, c)
 	}
-	for url, result := range results {
-		fmt.Println(url, result)
+
+	for i := 0; i < len(urls); i++ {
+		fmt.Println(<-c)
 	}
 
 }
 
-func hitURL(url string) error {
+func hitURL(url string, c chan<- result) {
 	resp, err := http.Get(url)
 	if err != nil || resp.StatusCode >= 400 {
-		return errRequestFail
+		c <- result{url: url, check: false}
 	}
-	return nil
+	c <- result{url: url, check: true}
 }
