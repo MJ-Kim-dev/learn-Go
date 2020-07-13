@@ -11,6 +11,7 @@ Study golang with sample code
 # Projects
 * [practice-structs](https://github.com/MJ-Kim-dev/learngo/tree/master/practice-structs)
 * [practice-maps](https://github.com/MJ-Kim-dev/learngo/tree/master/practice-maps)
+* [url-checker](https://github.com/MJ-Kim-dev/learngo/tree/master/url-checker)
 
 # Funny
 Write in go (song) - https://youtu.be/LJvEIjRBSDA
